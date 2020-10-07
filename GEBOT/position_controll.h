@@ -25,7 +25,7 @@ enum States
 class Gebot_Gait                    //步态参数设置 函数功能设置
 {
 public:
-
+    Gebot_Gait();
     //定义结构体-----------------------------------------------
     struct Gait_para
     {
@@ -36,8 +36,8 @@ public:
     };
 
     //定义参数-------------------------------------------------
-    float time_int = 0.1;                 //时间间隔
-    float time_step = 1;                //一次抬腿的时间
+    float time_int;                 //时间间隔
+    float time_step;                //一次抬腿的时间
     int resolution_ratio;
     Gait_para gaitPara;
     int state;
@@ -68,9 +68,9 @@ public:
     //步态规划 顺序间隔------------------------------------------
     void gait_planning();
 
-    vector<float> lifting_foot_trajectory_gene(struct Gait_para para_temp);
-    vector<float> supporting_foot_trajectory_gene(struct Gait_para para_temp);
-    vector<float> DH_inv_kinematics(float px, float py, float pz);
-
+    // vector<float> lifting_foot_trajectory_gene(struct Gait_para para_temp);
+    // vector<float> supporting_foot_trajectory_gene(struct Gait_para para_temp);
+    // vector<float> DH_inv_kinematics(float px, float py, float pz);
+};
 
 #endif //POSITION_CONTROLL_POSITION_CONTROLL_H
