@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/duoduo06/CLionProjects/GEBOT/position_controll.cpp
+iostream
+-
+vector
+-
+cmath
+-
+position_controll.h
+/Users/duoduo06/CLionProjects/GEBOT/position_controll.h
+
+/Users/duoduo06/CLionProjects/GEBOT/position_controll.h
+
